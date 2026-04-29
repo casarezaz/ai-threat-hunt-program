@@ -1,0 +1,2 @@
+date,asset_id,decision,reason,decision_owner,compensating_controls,review_date
+# decision in {allow, limit, monitor, redesign, pause, replace, terminate}

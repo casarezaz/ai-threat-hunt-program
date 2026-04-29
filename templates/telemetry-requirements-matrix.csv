@@ -1,0 +1,11 @@
+category,required_signals,present,partially_present,absent,owner,notes
+identity,"sign-ins, conditional access, OAuth grants, service principals, privileged role assignments, MFA changes, impossible travel, token events",,,,,
+saas,"app audit logs, admin changes, file access, message access, connector additions, workflow runs, customer data access",,,,,
+browser,"AI domains, extensions, session activity, unmanaged browsers, copy/paste and upload controls",,,,,
+endpoint,"IDE agent processes, CLI agent usage, model API calls, local file access, secrets exposure, shell history (where lawful)",,,,,
+network,"model API destinations, unusual egress, new AI services, DNS to unapproved AI domains, proxy categories",,,,,
+data_security,"DLP events, file labels, sensitive document access, uploads, downloads, sharing changes",,,,,
+rag_vector,"ingestion sources, embedding jobs, retrieval events, query patterns, index permissions, document lineage",,,,,
+api_workflow,"tool calls, function invocations, webhook activity, automation runs, approval bypass, failed action attempts",,,,,
+cloud,"model service use, keys, IAM permissions, storage access, logs, compute resources, cost anomalies",,,,,
+security_tooling,"agent-generated queries, case actions, containment actions, rule changes, suppression changes, response recommendations",,,,,

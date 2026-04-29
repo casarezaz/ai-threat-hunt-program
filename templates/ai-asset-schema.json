@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI Asset Register Entry",
+  "type": "object",
+  "required": ["asset_id", "name", "asset_class", "owner", "data_classification", "identity_context"],
+  "properties": {
+    "asset_id": { "type": "string", "description": "Stable identifier, e.g. AI-0001" },
+    "name": { "type": "string" },
+    "asset_class": {
+      "type": "string",
+      "enum": [
+        "saas_llm",
+        "embedded_copilot",
+        "enterprise_agent",
+        "custom_internal_agent",
+        "ide_cli_agent",
+        "browser_computer_use_agent",
+        "rag_system",
+        "vector_database",
+        "model_api_gateway",
+        "workflow_rpa_agent",
+        "customer_facing_agent",
+        "security_operations_agent"
+      ]
+    },
+    "vendor": { "type": "string" },
+    "tenant": { "type": "string" },
+    "owner": { "type": "string", "description": "Named owner; not just a team" },
+    "business_use": { "type": "string" },
+    "data_classification": {
+      "type": "string",
+      "enum": ["public", "internal", "confidential", "regulated"]
+    },
+    "identity_context": {
+      "type": "string",
+      "enum": ["user", "service_account", "privileged", "shared", "external_vendor"]
+    },
+    "capabilities": {
+      "type": "object",
+      "properties": {
+        "can_read": { "type": "boolean" },
+        "can_write": { "type": "boolean" },
+        "can_send": { "type": "boolean" },
+        "can_publish": { "type": "boolean" },
+        "can_deploy": { "type": "boolean" },
+        "can_delete": { "type": "boolean" },
+        "can_approve": { "type": "boolean" },
+        "can_modify_security_controls": { "type": "boolean" }
+      }
+    },
+    "connectors": { "type": "array", "items": { "type": "string" } },
+    "oauth_scopes": { "type": "array", "items": { "type": "string" } },
+    "model": { "type": "string" },
+    "api_key_location": { "type": "string" },
+    "first_seen": { "type": "string", "format": "date" },
+    "last_reviewed": { "type": "string", "format": "date" },
+    "sanctioned": { "type": "boolean" },
+    "discovery_source": {
+      "type": "string",
+      "enum": ["sso", "casb", "browser", "endpoint", "cloud", "git_scan", "env_scan", "oauth_export", "procurement", "manual"]
+    },
+    "notes": { "type": "string" }
+  }
+}

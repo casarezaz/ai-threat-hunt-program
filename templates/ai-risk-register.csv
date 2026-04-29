@@ -1,0 +1,3 @@
+asset_id,name,likelihood_1_5,impact_1_5,capability_agency_1_5,data_sensitivity_1_5,observability_1_5,inherent_risk,control_maturity_1_5,containment_readiness_1_5,residual_risk,top_concern,decision,decision_owner,decision_date,review_date
+# inherent_risk = (likelihood * impact) + capability_agency + data_sensitivity + (6 - observability)
+# residual_risk = inherent_risk - control_maturity - containment_readiness

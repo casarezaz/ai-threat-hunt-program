@@ -1,0 +1,1 @@
+asset_id,name,asset_class,vendor,tenant,owner,business_use,data_classification,identity_context,can_read,can_write,can_send,can_publish,can_deploy,can_delete,can_approve,can_modify_security_controls,connectors,oauth_scopes,model,api_key_location,first_seen,last_reviewed,sanctioned,notes

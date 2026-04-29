@@ -1,0 +1,61 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+htmlcov/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Secrets — defense in depth, never commit these
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*_rsa
+*_dsa
+*_ecdsa
+*_ed25519
+secrets/
+.secrets/
+
+# Local scan output
+scan-output/
+out/
+*.local.csv
+*.local.json
+*.local.md
+
+# OS / build artifacts
+*.log
+*.tmp
+node_modules/

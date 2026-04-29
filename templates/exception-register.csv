@@ -1,0 +1,2 @@
+date_opened,asset_id,exception,reason,compensating_controls,owner,risk_accepted_by,expiration_date,status
+# status in {open, expired, closed-resolved, closed-decided}
