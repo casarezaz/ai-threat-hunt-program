@@ -19,12 +19,14 @@ This program treats AI as **operational security**, not paperwork.
 
 ```
 docs/
-  papers/            Series papers (Paper 1: launch; Paper 2: D-Control; future papers)
-  d-control/         Per-step pages of the D-Control loop
+  papers/            Series papers (Paper 1: launch; Paper 2: D-Control; Paper 3: RAG; Paper 4: D-Evidence)
+  d-control/         Per-step pages of the D-Control loop (Paper 2)
+  d-evidence/        Per-domain pages of the D-Evidence proof model (Paper 4)
   launch/            LinkedIn launch post + share-bait phrases
   source/            Original .docx source documents
 hunts/
   starter/           H-001..H-010 — the starter hunt backlog from Paper 2
+  rag/               RAG-001..RAG-006 — RAG and vector-layer hunts from Paper 3
   template.md        Hunt template (every hunt produces findings/evidence/gaps/decision)
   reports/           Completed hunt reports (date-stamped per run)
 playbooks/
@@ -40,6 +42,8 @@ templates/
   decision-log.csv
   exception-register.csv
   hunt-hypothesis.md
+  d-evidence-package.md       Decision-grade evidence package per material finding (Paper 4)
+  d-evidence-maturity.md      Per-workflow self-assessment against the maturity model L0–L4 (Paper 4)
 metrics/
   executive-metrics.md
 scripts/
@@ -49,11 +53,13 @@ book/
   OUTLINE.md         Field guide outline mapping chapters to repo artifacts
 ```
 
-## D-Control in one paragraph
+## D-Control + D-Evidence in one paragraph
 
-D-Control is a continuous loop, not an annual assessment: **Discover → Define → Detect → Deny → Defend → Degrade/Contain → Document → Decide.** Each step forces a measurable output. If an AI system cannot be discovered, it cannot be governed. If its capabilities are undefined, its blast radius is unknown. If telemetry is missing, abuse becomes invisible. If denial and containment paths do not exist, the organization is relying on hope instead of control.
+**D-Control** is a continuous loop, not an annual assessment: **Discover → Define → Detect → Deny → Defend → Degrade/Contain → Document → Decide.** Each step forces a measurable output. If an AI system cannot be discovered, it cannot be governed. If its capabilities are undefined, its blast radius is unknown. If telemetry is missing, abuse becomes invisible. If denial and containment paths do not exist, the organization is relying on hope instead of control.
 
-Read [`docs/d-control/00-overview.md`](docs/d-control/00-overview.md) for the loop, then [Paper 2](docs/papers/paper-2-d-control.md) for the full doctrine.
+**D-Evidence** pairs with D-Control as the proof layer: every D-Control question implies a D-Evidence follow-up. Where D-Control asks *"what should have constrained this behavior?"*, D-Evidence asks *"can we prove whether it did?"* Every concern must be traceable across **identity, intent, action, data, control, state, and time** — and a missing link is itself a risk finding.
+
+Read [`docs/d-control/00-overview.md`](docs/d-control/00-overview.md) and [`docs/d-evidence/00-overview.md`](docs/d-evidence/00-overview.md) for the operating models, then [Paper 2](docs/papers/paper-2-d-control.md) and [Paper 4](docs/papers/paper-4-d-evidence.md) for the full doctrines.
 
 ## Quick start for a defender
 
@@ -75,7 +81,9 @@ D-Control does not replace these frameworks. It operationalizes them. Each princ
 
 - [Paper 1 — Launch and Fast-Track](docs/papers/paper-1-launch.md)
 - [Paper 2 — D-Control: The Signature Loop](docs/papers/paper-2-d-control.md)
-- *Paper 3 onwards: see `book/OUTLINE.md` for candidate topics.*
+- [Paper 3 — RAG and Vector-Layer Security](docs/papers/paper-3-rag-vector-security.md)
+- [Paper 4 — D-Evidence: Turning D-Control Into Defensible Proof](docs/papers/paper-4-d-evidence.md)
+- *Paper 5 onwards: see `book/OUTLINE.md` for candidate topics.*
 
 ## Contributing
 

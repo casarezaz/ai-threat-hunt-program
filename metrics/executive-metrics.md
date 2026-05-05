@@ -99,6 +99,32 @@ Each metric below has a definition, data source, target, cadence, and formula. T
 - **Target:** Tracked, not minimized — visibility into where the org is choosing to fly blind.
 - **Cadence:** Quarterly.
 
+## D-Evidence metrics (Paper 4)
+
+### D-Evidence maturity level per high-risk workflow
+- **Definition:** For each AI workflow rated High or Critical, the current maturity level (0 Blind / 1 Fragmented / 2 Traceable / 3 Decision-grade / 4 Continuously validated) per [Paper 4 §9](../docs/papers/paper-4-d-evidence.md#9-d-evidence-maturity-model).
+- **Data source:** [`templates/d-evidence-maturity.md`](../templates/d-evidence-maturity.md) self-assessments, recorded in the AI Asset Register `notes` field.
+- **Target:** Level 3 for any workflow that touches regulated data, executes write actions, or has external customer impact. Level 4 for workflows whose abuse would be material to the business.
+- **Cadence:** Quarterly.
+
+### Evidence-gap findings open
+- **Definition:** Count of evidence-gap findings open by quarter, by domain (identity / intent / action / data / control / state / time).
+- **Data source:** Evidence-gap findings filed alongside hunt findings (see [`templates/d-evidence-package.md`](../templates/d-evidence-package.md) §6).
+- **Target:** Trend down per quarter. Domain breakdown drives the instrumentation backlog priorities.
+- **Cadence:** Quarterly.
+
+### Mean time to assemble a decision-grade evidence package
+- **Definition:** Hours from the moment a material finding is opened to the moment its [evidence package](../templates/d-evidence-package.md) is complete and signed.
+- **Data source:** Evidence repository timestamps.
+- **Target:** ≤ 4 hours for High; ≤ 24 hours for Medium.
+- **Cadence:** Monthly.
+
+### Vendor logging gaps blocking Level 3
+- **Definition:** Count of high-risk workflows whose target maturity is Level 3 but whose vendor logging gaps prevent it. Each becomes a procurement / contract conversation, not an engineering ticket.
+- **Data source:** Evidence retention and export gap assessment ([Paper 4 §12](../docs/papers/paper-4-d-evidence.md#12-30--60--90-day-build-plan), 60-day deliverable).
+- **Target:** Tracked, not minimized — visibility into where the org is choosing to fly blind because a vendor will not give it the logs.
+- **Cadence:** Quarterly.
+
 ## How to brief these
 
 The executive message stays crisp:

@@ -9,6 +9,7 @@ If a hunt cannot produce all four, it is exploration, not a hunt.
 ## Layout
 
 - `starter/` — the 10 starter hunts from Paper 2 (D-Control). Run these first when standing up a program.
+- `rag/` — RAG and vector-layer hunts from Paper 3 (`RAG-001` … `RAG-006`).
 - `reports/` — completed hunt reports. Naming: `<YYYY-MM-DD>-<asset-or-scope>-<hunt-id>.md`.
 - `template.md` — the hunt template. Copy it when adding a new hunt.
 

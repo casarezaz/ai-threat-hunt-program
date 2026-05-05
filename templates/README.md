@@ -14,3 +14,5 @@ These are the operational artifacts the D-Control loop produces. They are intent
 | `decision-log.csv` | Dated decisions: allow / limit / monitor / redesign / pause / replace / terminate | Decide |
 | `exception-register.csv` | Risk-accepted deviations with expirations | Deny, Document, Decide |
 | `hunt-hypothesis.md` | Hunt hypothesis template (mirrors `hunts/template.md`) | Detect |
+| `d-evidence-package.md` | Decision-grade evidence package per material finding (Paper 4) | Document, Decide |
+| `d-evidence-maturity.md` | Per-workflow self-assessment against the D-Evidence maturity model L0–L4 (Paper 4) | Document |
